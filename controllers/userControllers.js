@@ -1,7 +1,6 @@
 const users = require("../models/user");
 const jwt = require("jsonwebtoken");
 
-const verifyToken = require("../utils/auth");
 const { encryptPassword, decryptPassword } = require("../utils/bycript");
 const config = require("../config/config");
 
@@ -47,6 +46,17 @@ class userController {
     }
 
     let compare = await decryptPassword(req.body.password, user.password);
+    if (!compare) {
+      return res.status(404).send({ auth: false, token: null });
+    }
+    const token = jwt.sign({ id: user._id }, config.secretAuthKey, {
+      expiresIn: 60 * 60 * 24
+    });
+    res.status(200).json({ auth: true, token });
+  }
+
+  async logout(req, res, next) {
+    res.status(200).send({ auth: false, token: null });
   }
 }
 
