@@ -32,7 +32,7 @@ class userController {
 
   //Verificar JWT
   async verify(req, res, next) {
-    const user = await User.findById(req.userId, { password: 0 });
+    const user = await users.findById(req.userId, { password: 0 });
     if (!user) {
       return res.status(404).send("No user found.");
     }
