@@ -1,10 +1,13 @@
 const bcrypt = require("bcryptjs");
+const users = require("../models/user");
 
 encryptPassword = async password => {
   return bcrypt.hashSync(password, 10);
 };
 
-decryptPassword = async (hashPassword, password) => {
+decryptPassword = async (password, hashPassword) => {
+  // console.log(hashPassword);
+  // console.log(password);
   return bcrypt.compareSync(password, hashPassword);
 };
 

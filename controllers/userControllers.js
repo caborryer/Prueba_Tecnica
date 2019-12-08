@@ -30,13 +30,23 @@ class userController {
     }
   }
 
-  //Verificar JWT
+  //Rutas seguras con JWT
   async verify(req, res, next) {
     const user = await users.findById(req.userId, { password: 0 });
     if (!user) {
       return res.status(404).send("No user found.");
     }
     res.status(200).json(user);
+  }
+
+  //Login usuarios
+  async findOne(req, res, next) {
+    const user = await users.findOne({ email: req.body.email });
+    if (!user) {
+      return res.status(404).send("The email does not exit");
+    }
+
+    let compare = await decryptPassword(req.body.password, user.password);
   }
 }
 
