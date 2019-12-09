@@ -22,3 +22,15 @@
     <p>
       <strong>-GET:</strong>Se obtiene un array organizado de forma ascendente
     </p>
+    <h3>2.Ruta '/des'</h3>
+    <p>
+      <strong>-GET:</strong>Se obtiene un array organizado de forma descendente
+    </p>
+    <h3>3.Ruta '/mix'</h3>
+    <p>
+      <strong>-GET:</strong>Se obtiene un array organizado de forma aleatoria
+    </p>
+    <h3>4.Ruta '/assets.sorted.txt'</h3>
+    <p>
+      <strong>-GET:</strong>Se obtiene el registro de los arrays organizados
+    </p>
