@@ -6,8 +6,6 @@ encryptPassword = async password => {
 };
 
 decryptPassword = async (password, hashPassword) => {
-  // console.log(hashPassword);
-  // console.log(password);
   return bcrypt.compareSync(password, hashPassword);
 };
 
