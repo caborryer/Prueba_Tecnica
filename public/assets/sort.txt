@@ -1,0 +1,5 @@
+[2019-12-09T08:57:55.108Z] info ordenados de forma ascendente:4,20,34,100
+[2019-12-09T08:57:57.267Z] info ordenados de forma descendente:500,34,20,10,5
+[2019-12-09T08:57:59.890Z] info ordenados de forma aleatoria:100,25,10,40,1,5
+[2019-12-09T08:58:01.018Z] info ordenados de forma aleatoria:1,5,10,25,100,40
+[2019-12-09T08:58:02.106Z] info ordenados de forma aleatoria:25,5,10,1,100,40
