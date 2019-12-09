@@ -3,8 +3,8 @@
     <h2>Rutas usuarios</h2>
     <h3>1.Ruta '/'</h3>
     <p>
-      <strong>-GET:</strong>Devuelve un usuario a partir del suministro de su
-      token
+      <strong>-GET:</strong>Devuelve usuarios y arrays a partir del suministro
+      de su token
     </p>
     <p><strong>-POST:</strong>Registro de usuarios</p>
     <h3>2.Ruta '/signup'</h3>
@@ -15,4 +15,10 @@
     <p>
       <strong>-POST:</strong>Verifica si existe email de usuario y compara
       password
+    </p>
+    <hr />
+    <h2>Rutas arrays</h2>
+    <h3>1.Ruta '/asc'</h3>
+    <p>
+      <strong>-GET:</strong>Se obtiene un array organizado de forma ascendente
     </p>
