@@ -14,8 +14,8 @@ router.route("/logout").get(user.logout);
 router.route("/user").get(verifyToken, user.verify);
 
 //array routes
-router.route("/asc").get(array.asc);
-router.route("/des").get(array.desc);
-router.route("/mix").get(array.mix);
+router.route("/asc").get(verifyToken, array.asc);
+router.route("/des").get(verifyToken, array.desc);
+router.route("/mix").get(verifyToken, array.mix);
 
 module.exports = router;
