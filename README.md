@@ -7,9 +7,12 @@
       token
     </p>
     <p><strong>-POST:</strong>Registro de usuarios</p>
-    <h3>1.Ruta '/signup'</h3>
+    <h3>2.Ruta '/signup'</h3>
     <p><strong>-POST:</strong>Se registra un usuario</p>
     <p><strong>Siguiendo la estructura:</strong></p>
     <code>{ username: str, email: str, password: str}</code>
-    <p></p>
-    <hr />
+    <h3>3.Ruta '/login'</h3>
+    <p>
+      <strong>-POST:</strong>Verifica si existe email de usuario y compara
+      password
+    </p>
