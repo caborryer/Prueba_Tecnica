@@ -4,7 +4,7 @@
     <h3>1.Ruta '/'</h3>
     <p>
       <strong>-GET:</strong>Devuelve usuarios y arrays a partir del suministro
-      de su token
+      de token de usuario
     </p>
     <p><strong>-POST:</strong>Registro de usuarios</p>
     <h3>2.Ruta '/signup'</h3>
